@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Muziek Website</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="container"></div>
+    <div class = "content">
+        <div class="left-col">
+            <img src="test/play.png" id ="icon">
+        </div>
+    </div>
+    
+    <audio id = "mySong">
+        <source src = "test/file_example_MP3_1MG.mp3" type = "audio/mp3">
+    </audio>
+
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        mySong.play();
+    }
+</script>
+
+
+</body>
+</html>
